@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box login">
+      <form action="post">
+        <h1>Login</h1>
+        <div class="input-box">
+          <input type="text" name="Username" id="Username" oninput="input_data()" placeholder="Username" required>
+          <i class='bxr  bx-user'  ></i> 
+        </div>
+        <div class="input-box">
+          <input type="password" name="password" id="password" oninput="input_data()"  placeholder="password" required>
+          <i class='bxr  bx-lock'  ></i> 
+        </div>
+        <div class="forgot-link">
+          <a href="">Forgot password</a>
+        </div>
+        <br>
+        <button type="submit" onclick="fun()" class="btn">Login</button>
+        <p>or login with social platform</p>
+       
+      </form>
+    </div>
+  <!-- ************************************************register************************************************ -->
+   <div class="form-box register">
+      <form action="">
+        <h1>Registation</h1>
+        <div class="input-box">
+          <input type="text" name="Registation_name" id="Registation_User" oninput="Registation()" placeholder="Username" required>
+          <i class='bxr  bx-user'  ></i> 
+        </div>
+        <div class="input-box">
+          <input type="email" name="Registation_Email" id="Registation_Email" oninput="Registation()"  placeholder="email" required>
+          <i class='bxr  bx-envelope-open'  ></i> 
+        </div>
+        <div class="input-box">
+          <input type="password" name="Registation_Pass" id="Registation_Pass"  oninput="Registation()" placeholder="Password" required>
+          <i class='bxr  bx-lock'  ></i> 
+        </div>
+        
+        <br>
+        <button type="submit" class="btn">Registation</button>
+        <p>or register with social platform</p>
+        <div class="social-icons">
+          <a href="">
+            <i class='bxr  bx-user'  ></i> 
+          </a>
+          <a href="">
+                      <i class='bxr  bx-user'  ></i> 
+
+          </a>
+          <a href="">
+                      <i class='bxr  bx-user'  ></i> 
+
+          </a>
+        </div>
+      </form>      
+    </div>
+
+    <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+          <h1>Hello Student</h1>
+          <p>Don't have an account ?</p>
+          <button class="btn register-btn">Register</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <h1>Welcome Student</h1>
+          <p>Already't have an account ?</p>
+          <button class="btn login-btn">Login</button>
+        </div>
+      </div>
+     
+
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
