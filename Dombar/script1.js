@@ -94,7 +94,7 @@ function Name(){
 
 function Logout(){
 	// localStorage.removeItem('Username')
-	window.open('/tc/login.html')
+	window.open('/tc/index.html')
 }
 
 
